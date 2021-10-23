@@ -1,34 +1,56 @@
 
 /**
  * The class Module displays the modules taken at BNU,
- * that are part of a course.
+ * that are part of a course, including information
+ * regarding the module code and title.
  *
  * @author Mercy Sholola
- * @version 23.10.21
+ * @version 23/10/21 1.0
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+ // Variables
+ private String code;
+ private String title;
+ private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module()
+    public Module(String code, String title)
     {
         // initialise instance variables
-        x = 0;
+        credit = 15;
+        this.code = code;
+        this.title = title;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public String getCode()
     {
-        // put your code here
-        return x + y;
+        return code;
     }
+    
+    public String getTitle()
+    {
+        return title;
+    }
+    
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+    }
+    
+
+     /**
+     * Print the details of the course, the list
+     * of students enrolled and the module
+     */
+    public void print()
+    {
+        System.out.println(" Module Code: " + code + ": " 
+                        + title + " Credit " + credit);
+        System.out.println();
+    }
+    
+
 }
