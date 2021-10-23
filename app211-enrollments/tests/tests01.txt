@@ -1,0 +1,20 @@
+Course computingandweb = new Course("BT1CWD1", "BSc Computing & Web" );
+Course computing = new Course("BT1CWD1", "BSc Computing & Web");
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing & Web
+
+Student mercy = new Student("Mercy Sholola", 22130778);
+mercy.print();
+ Student ID: 22130778 Name: Mercy Sholola
+mercy.enrol(computing);
+mercy.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing & Web
+

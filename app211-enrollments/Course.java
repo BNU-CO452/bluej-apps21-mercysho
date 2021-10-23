@@ -1,4 +1,3 @@
-import java.util.*;
 
 /**
  * This class contains information about an undergraduate course
