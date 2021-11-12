@@ -3,7 +3,8 @@
  * Write a description of class ModuleMark here.
  *
  * @author Derek Peacock and Nicholas Day
- * @version 2021-08-18
+ * Modified by Mercy Sholola
+ * @version 2021-11-01
  */
 public class ModuleMark
 {
