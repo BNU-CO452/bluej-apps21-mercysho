@@ -1,25 +1,3 @@
-Student mercy = new Student("Mercy Sholola", 22130778);
-mercy.print();
- Student ID: 22130778, Mercy Sholola
-Course computingweb = new Course("BT1CWD1", "BSc Computing & Web");
-mercy.enrol(computingweb);
-mercy.printCourse();
- Student ID: 22130778, Mercy Sholola
-
- Course BT1CWD1: BSc Computing & Web
-Module co452 = new Module("CO452", "Programming Concepts");
-computingweb.addModule(co452);
-computingweb.print();
-
- Course BT1CWD1: BSc Computing & Web
-
- CO452: 	Programming ConceptsStudent shaa = new Student("Shaa Walker", 22148576);
-ModuleMark mercy452 = new ModuleMark(co452);
-mercy452.setMark(67);
-ModuleMark shaa452 = new ModuleMark(co452);
-shaa452.setMark(75);
-mercy.addMark(mercy452);
-mercy.printTranscript();
  ------------------------------------
  App21-02: Exam Board Transcript 2021
         by student name
@@ -28,7 +6,7 @@ mercy.printTranscript();
 
  Course BT1CWD1: BSc Computing & Web
 
- CO452: 	Programming Concepts
+ CO452: 	Programming Concepts	  15 credits
 
  ---- 	 -------------------- 	 ------	 ---- 	 -----
  Code 	 Module 		Credit	 Mark 	 Grade
@@ -36,13 +14,22 @@ mercy.printTranscript();
 
 
  No Final Course Grade Yet!
-shaa.addMark(shaa452);
-Module co450 = new Module("CO450", "Computer Architectures");
-computingweb.addModule(co450);
-mercy.printCourse();
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
  Student ID: 22130778, Mercy Sholola
 
  Course BT1CWD1: BSc Computing & Web
 
- CO452: 	Programming Concepts
- CO450: 	Computer Architectures
+ CO452: 	Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
