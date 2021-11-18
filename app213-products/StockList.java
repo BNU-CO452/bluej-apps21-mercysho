@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Mercy Sholola) 
+ * @version (2021.11.18)
  */
 public class StockList
 {
@@ -46,6 +46,26 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        Product product = findProduct(productID);
+if(product != null) 
+        {
+            if(product.getQuantity() > 1000)
+            {
+                product.increaseQuantity(amount);
+                System.out.println("Bought " + amount + " of " + product.getName());
+                
+            }
+            else
+            {
+                System.out.println("Space limit exceeded for " + product.getName() +
+                                    ". Sell existing stock ");
+             
+            }
+        }
+        else
+        {
+                System.out.println("Sorry, product not found");
+        }
     }
     
     /**
@@ -54,9 +74,13 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
+        for(Product product : stock)
+        {
+            if(product.getID() == productID)
+                return product;
+        }
         return null;
     }
-    
     
     /**
      * Sell one of the given product.
@@ -65,24 +89,42 @@ public class StockList
      */
     public void sellProduct(int productID)
     {
+        sellProduct(productID, 1);
+    }
+    /**
+     * Sell many of the given product.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int productID, int amount)
+    {
         Product product = findProduct(productID);
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
-                product.decreaseQuantity(1);
+                product.decreaseQuantity(amount);
+                System.out.println("Sold " + amount + " of " + product.getName());
                 
-                // printout message
             }
-            else
+            else if(product.getQuantity() == 0)
             {
-                // printout message
+                System.out.println("Product " + product.getName() +
+                                    " is now out of stock");
+             
             }
+      
+            else 
+            {
+                System.out.println("Can't sell " + amount + " of " + product.getName() +
+                                    " as quantity is limited");
+            }
+        
         }
         else
         {
-            // printout message
+                System.out.println("Sorry, product not found");
         }
     }    
 
@@ -133,7 +175,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Peacock's Stock List");
+        System.out.println(" Mercy's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }

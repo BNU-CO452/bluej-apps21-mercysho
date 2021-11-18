@@ -1,0 +1,199 @@
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Sold 400 of Nike AF 1's
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 100
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Space limit exceeded for Nike AF 1's. Sell existing stock 
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Product Nike AF 1's is now out of stock
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Space limit exceeded for Nike AF 1's. Sell existing stock 
+Space limit exceeded for Adidas Flux. Sell existing stock 
+Space limit exceeded for Air Jordan 4's. Sell existing stock 
+Space limit exceeded for Air Jordan 1's. Sell existing stock 
+Space limit exceeded for New Balance Wind Runners. Sell existing stock 
+Space limit exceeded for Balenciaga Speed Sneakers. Sell existing stock 
+Space limit exceeded for Reebok Classics. Sell existing stock 
+Space limit exceeded for Puma Classics. Sell existing stock 
+Space limit exceeded for Nike AirMax 270's. Sell existing stock 
+Space limit exceeded for Nike AirMax 95's. Sell existing stock 
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Product Nike AF 1's is now out of stock
+Product Adidas Flux is now out of stock
+Product Air Jordan 4's is now out of stock
+Product Air Jordan 1's is now out of stock
+Product New Balance Wind Runners is now out of stock
+Product Balenciaga Speed Sneakers is now out of stock
+Product Reebok Classics is now out of stock
+Product Puma Classics is now out of stock
+Product Nike AirMax 270's is now out of stock
+Product Nike AirMax 95's is now out of stock
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Space limit exceeded for Nike AF 1's. Sell existing stock 
+Space limit exceeded for Adidas Flux. Sell existing stock 
+Space limit exceeded for Air Jordan 4's. Sell existing stock 
+Space limit exceeded for Air Jordan 1's. Sell existing stock 
+Space limit exceeded for New Balance Wind Runners. Sell existing stock 
+Space limit exceeded for Balenciaga Speed Sneakers. Sell existing stock 
+Space limit exceeded for Reebok Classics. Sell existing stock 
+Space limit exceeded for Puma Classics. Sell existing stock 
+Space limit exceeded for Nike AirMax 270's. Sell existing stock 
+Space limit exceeded for Nike AirMax 95's. Sell existing stock 
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
+Product Nike AF 1's is now out of stock
+Product Adidas Flux is now out of stock
+Product Air Jordan 4's is now out of stock
+Product Air Jordan 1's is now out of stock
+Product New Balance Wind Runners is now out of stock
+Product Balenciaga Speed Sneakers is now out of stock
+Product Reebok Classics is now out of stock
+Product Puma Classics is now out of stock
+Product Nike AirMax 270's is now out of stock
+Product Nike AirMax 95's is now out of stock
+
+ Mercy's Stock List
+ ====================
+
+ ID 101: Nike AF 1's stock level: 0
+ ID 102: Adidas Flux stock level: 0
+ ID 103: Air Jordan 4's stock level: 0
+ ID 104: Air Jordan 1's stock level: 0
+ ID 105: New Balance Wind Runners stock level: 0
+ ID 106: Balenciaga Speed Sneakers stock level: 0
+ ID 107: Reebok Classics stock level: 0
+ ID 108: Puma Classics stock level: 0
+ ID 109: Nike AirMax 270's stock level: 0
+ ID 110: Nike AirMax 95's stock level: 0
+
