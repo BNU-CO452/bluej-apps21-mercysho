@@ -1,87 +1,81 @@
-
+import java.util.*;
 /**
- * Demonstrate the StockManager and Product classes.
- * The demonstration becomes properly functional as
- * the StockManager class is completed.
+ * Display the StockManager and Product classes. 
+ * When the StockManager class is completed, 
+ * the demonstration becomes properly functional.
  * 
- * @author Mercy Sholola
- * @version 2021.11.18
+ * @author David J. Barnes and Michael Kölling.
+ * @modified by Mercy Sholola
+ * @version 18/11/2021
  */
 public class StockDemo
 {
-    // The stock manager.
-    private StockList stock;
-
+    // The StockManager class dependencies.
+    private StockManager manager;
+    // Allows the demo to randomise structured test data
+    private Random rand = new Random();
     /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
+     * Set up a StockManager with a few sample products in a list 
+     * with dependents and populate it with the sample products
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
-        this.stock = new StockList();
+        this.manager = manager;
+        manager.addProduct(new Product(101, "Nike AF 1s"));
+        manager.addProduct(new Product(102, "Adidas Flux"));
+        manager.addProduct(new Product(103, "Air Jordan 4s"));
+        manager.addProduct(new Product(104, "Air Jordan 1s"));
+        manager.addProduct(new Product(105, "New Balance Wind Runners"));
+        manager.addProduct(new Product(106, "Balenciaga Speed Sneakers"));
+        manager.addProduct(new Product(107, "Reebok Classics"));
+        manager.addProduct(new Product(108, "Puma Classics"));
+        manager.addProduct(new Product(109, "Nike AirMax 270's"));
+        manager.addProduct(new Product(110, "Nike AirMax 95's"));
         
-        // Add at least 10 products, they must be unique to you
-        // Make sure the ids are sequential numbers
-        
-        stock.add(new Product(101, "Nike AF 1's"));
-        stock.add(new Product(102, "Adidas Flux"));
-        stock.add(new Product(103, "Air Jordan 4's"));
-        stock.add(new Product(104, "Air Jordan 1's"));
-        stock.add(new Product(105, "New Balance Wind Runners"));
-        stock.add(new Product(106, "Balenciaga Speed Sneakers"));
-        stock.add(new Product(107, "Reebok Classics"));
-        stock.add(new Product(108, "Puma Classics"));
-        stock.add(new Product(109, "Nike AirMax 270's"));
-        stock.add(new Product(110, "Nike AirMax 95's"));
-        
-        runDemo();
     }
     
     /**
-     * Provide a demonstration of how the ProductList meets all
-     * the user requirements by making a delivery of each product 
-     * buying it in various amounts and then selling each
-     * product by various amounts. Make sure all the requirements
-     * have been demonstrated.
+     * Provide a very simple demonstration of how a StockManager
+     * might be used. 
+     * Displays the details of one product 
+     * Iterates over all data using a loop and ID 
+     * Gives a range of 1-12 new products
      */
-    public void runDemo()
+    public void demoDelivery()
     {
-        // Show details of all of the products before delivery.
-        
-        stock.print();
-
-        buyProducts();
-        stock.print();        
-
-        sellProducts();
-        stock.print();        
+        for(int id =12; id <= 22; id++)
+        {
+            manager.deliverProduct(id, rand.nextInt(12) + 1);
+        }
     }
     
-    private void buyProducts()
+    /**
+     * Provide a very simple demonstration of how a StockManager
+     * might be used. Details of one product are shown
+     * Scans for the max quantity of IDs to avoid any overselling in a for loop 
+     * Iterates through all data with ID to go through all data
+     */
+    public void demoSell()
     {
-        stock.buyProduct(101,500);
-        stock.buyProduct(102,300);
-        stock.buyProduct(103,600);
-        stock.buyProduct(104,50);
-        stock.buyProduct(105,500);
-        stock.buyProduct(106,200);
-        stock.buyProduct(107,600);
-        stock.buyProduct(108,20);
-        stock.buyProduct(109,700);
-        stock.buyProduct(110,500);
+        for(int id =12; id <= 22; id++)
+        {   
+            int stockQuantity = manager.numberInStock(id);
+            if(stockQuantity < 1)
+            {
+                stockQuantity = 1;
+            }
+            manager.sellProduct(id, rand.nextInt(stockQuantity) + 1);
+        }
     }
-
-    private void sellProducts()
+    
+    /**
+     * Runs all key tasks with the demo data provided
+     */
+    public void runDemo(String findName)
     {
-        stock.sellProduct(101,400);
-        stock.sellProduct(102,500);
-        stock.sellProduct(103,200);
-        stock.sellProduct(104,500);
-        stock.sellProduct(105,600);
-        stock.sellProduct(106,200);
-        stock.sellProduct(107,100);
-        stock.sellProduct(108,900);
-        stock.sellProduct(109,400);
-        stock.sellProduct(110,500);
-    }    
+        manager.findProduct(findName);
+        manager.printAllProducts();
+        demoDelivery();
+        demoSell();
+    }
 }

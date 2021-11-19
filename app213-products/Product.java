@@ -1,8 +1,10 @@
+import java.util.*;
 /**
  * Model some details of a product sold by a company.
  * 
- * @author Mercy Sholola
- * @version 2021.11.18
+ * @author David J. Barnes and Michael Kölling.
+ * @modified by Mercy Sholola
+ * @version 18/11/2021
  */
 public class Product
 {
@@ -12,18 +14,19 @@ public class Product
     private String name;
     // The quantity of this product in stock.
     private int quantity;
-
+    
     /**
      * Constructor for objects of class Product.
      * The initial stock quantity is zero.
      * @param id The product's identifying number.
      * @param name The product's name.
+     * @param quantity The product's stock level.
      */
+    
     public Product(int id, String name)
     {
         this.id = id;
         this.name = name;
-        
         quantity = 0;
     }
 
@@ -51,33 +54,63 @@ public class Product
         return quantity;
     }
 
-    public void setQuantity(int quantity)
-    {
-        this.quantity = quantity;
-    }
-    
-    public void increaseQuantity(int amount)
-    {
-        quantity = quantity + amount;
-    }
-    
-    public void decreaseQuantity(int amount)
-    {
-        if(quantity >= amount)
-            quantity = quantity - amount;
-    }
-    
     /**
      * @return The id, name and quantity in stock.
      */
     public String toString()
     {
-        return " ID " + id + ": " +  name + " stock level: " + quantity;
+        return id + ": " +  name + " stock level: " + quantity;
     }
 
-    
-    public void print()
+    /**
+     * Restock with the given amount of this product.
+     * The current quantity is incremented by the given amount.
+     * @param amount The number of new items added to the stock.
+     * This must be greater than zero.
+     */
+    public void increaseQuantity(int amount)
     {
-        System.out.println(toString());
+        if(amount > 0) 
+        {
+            quantity += amount;
+        }
+        else 
+        {
+            System.out.println("Attempt to restock " + name +
+                               " with a non-positive amount: " + amount);
+        }
+    }
+
+    /**
+     * Sell a specified quantity of a product.
+     * An error is reported if there appears to be no stock.
+     */
+    public void sellProduct(int sellQuantity)
+    {
+        if(quantity > sellQuantity) 
+        {
+            quantity = quantity - sellQuantity;
+        }
+        else 
+        {
+            System.out.println(
+                "Trying to sell an item that is out of stock: " + name);
+        }
+    }
+    
+    /**
+     * Replaces name, requires a string input 
+     */
+    public void replaceName(String newName)
+    {
+        name = newName;
+    }
+    
+    /**
+     * Replaces quantity, requires a integer input 
+     */
+    public void replaceQuantity(int newQuantity)
+    {
+        quantity = newQuantity;
     }
 }
