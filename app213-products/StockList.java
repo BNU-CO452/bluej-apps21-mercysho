@@ -80,7 +80,7 @@ public class StockList
         
         for(Product product: stock)
         { 
-            if(product.getQuantity() < 5)
+            if(product.getQuantity() < 4)
             {
                 product.increaseQuantity(10);
                 System.out.println(product.getName() + " has been restocked");
