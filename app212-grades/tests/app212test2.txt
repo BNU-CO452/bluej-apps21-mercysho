@@ -1,0 +1,148 @@
+  ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	67B
+
+
+ Final Course Grade = F
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	67B
+
+ CO456: 	Web Development	  15	78A
+
+
+ Final Course Grade = F
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Architectures	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	67B
+
+ CO456: 	Web Development	  15	78A
+
+ CO450: 	Computer Architectures	  15	95A
+
+
+ Final Course Grade = B
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Architectures	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	67B
+
+ CO456: 	Web Development	  15	78A
+
+ CO450: 	Computer Architectures	  15	95A
+
+ CO454: 	Digital Technologies and Professional Practice	  15	92A
+
+
+ Final Course Grade = A
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Achitectures	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	85	A
+
+ CO456: 	Web Development	  15	79	A
+
+ CO450: 	Computer Achitectures	  15	73	A
+
+ CO454: 	Digital Technologies and Professional Practice	  15	67	B
+
+
+ Final Course Grade = A
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Achitectures	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22130778, Mercy
+
+ Course BT1CWD1: BSc Computing & Web
+
+ CO452: 	Programming Concepts	  15 credits
+ CO456: 	Web Development	  15 credits
+ CO450: 	Computer Achitectures	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	85	A
+
+ CO456: 	Web Development	  15	78	A
+
+ CO450: 	Computer Achitectures	  15	71	A
+
+ CO454: 	Digital Technologies and Professional Practice	  15	64	B
+
+
+ Final Course Grade = A

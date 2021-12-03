@@ -2,24 +2,15 @@ import java.util.ArrayList;
 
 /**
  * Manage the stock in a business.
- * The stock is described by zero even to have more.
+ * The stock is described by zero or more Products.
  * 
- * @author Mercy Sholola  
- * @version 0.1 18/11/2021
+ * @author (Mercy Sholola) 
+ * @version (2021.11.18)
  */
 public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
-    public ArrayList<Product> products;
-    
-    public int quantity;
-    public int id;
-    public String name; 
-    //
-    private int amountRequired;
-    //Finds the product key
-    private boolean isFound;
 
     /**
      * Initialise the stock manager.
@@ -28,27 +19,14 @@ public class StockList
     {
         stock = new ArrayList<Product>();
     }
-    
+
     /**
      * Add a product to the list.
-     */
-    public void add(Product item)
-    {   
-            stock.add(item);
-    }
-    
-    /**
-     * Removes product by Product ID.
      * @param item The product item to be added.
      */
-    public Product remove(int productID)
-    {       
-        Product product = findProduct(productID);
-        if (product!= null)
-            stock.remove(product);
-        else
-            System.out.println("Sorry, product has not been found");
-            return product;
+    public void add(Product item)
+    {
+        stock.add(item);
     }
     
     /**
@@ -56,8 +34,9 @@ public class StockList
      */
     public void buyProduct(int productID)
     {
-      buyProduct(productID, 1);
+        buyProduct(productID, 1);
     }
+    
     
     /**
      * Buy a quantity of a particular product.
@@ -66,65 +45,41 @@ public class StockList
      * @param amount The amount to increase the quantity by.
      */
     public void buyProduct(int productID, int amount)
-    { Product product = findProduct(productID) ;
-     product.increaseQuantity(amount);
-    }
-    
-    /**
-     * Check levels of stock
-     * If the stock is less than minimum it will add more
-     */
-    public void reStock()
     {
-        printHeading();
-        
-        for(Product product: stock)
-        { 
-            if(product.getQuantity() < 4)
+        Product product = findProduct(productID);
+if(product != null) 
+        {
+            if(product.getQuantity() > 1000)
             {
-                product.increaseQuantity(10);
-                System.out.println(product.getName() + " has been restocked");
+                product.increaseQuantity(amount);
+                System.out.println("Bought " + amount + " of " + product.getName());
+                
+            }
+            else
+            {
+                System.out.println("Space limit exceeded for " + product.getName() +
+                                    ". Sell existing stock ");
+             
             }
         }
-
+        else
+        {
+                System.out.println("Sorry, product not found");
+        }
     }
-
-    /**
-     * Find a product to match the product name,
-     * if not found return null
-     */
-    public void searchForProduct(String productName)
-        {   
-            for (Product product: stock)
-                if(productName.contains(productName))
-                {   
-                    System.out.println(product); 
-                }
-            }
-                                    
+    
     /**
      * Find a product to match the product id,
      * if not found return null
      */
     public Product findProduct(int productID)
     {
-        for(Product product : stock )
+        for(Product product : stock)
         {
             if(product.getID() == productID)
-            
                 return product;
-                System.out.println(product);
-            
         }
         return null;
-    }
-
-    /**
-     * Sells one product
-     */
-    public void sellProduct(int productID)
-    {
-        sellProduct(productID , 1);
     }
     
     /**
@@ -132,39 +87,47 @@ public class StockList
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public String sellProduct(int productID, int amount)
+    public void sellProduct(int productID)
+    {
+        sellProduct(productID, 1);
+    }
+    /**
+     * Sell many of the given product.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
-                product.sellProduct(amount);
-                // printout message
-                return String.valueOf(product.getQuantity());
+                product.decreaseQuantity(amount);
+                System.out.println("Sold " + amount + " of " + product.getName());
+                
             }
-            else
+            else if(product.getQuantity() == 0)
             {
-                amountRequired = -1*(product.getQuantity()-amount);
-                // printout message
-                return "Quantity is low, " + amountRequired 
-                        +"more stock needed for "+ product;
+                System.out.println("Product " + product.getName() +
+                                    " is now out of stock");
+             
             }
+      
+            else 
+            {
+                System.out.println("Can't sell " + amount + " of " + product.getName() +
+                                    " as quantity is limited");
+            }
+        
         }
         else
         {
-            // printout message
-            return("Sorry, no products available");
+                System.out.println("Sorry, product not found");
         }
-    }
-    
-    public void search(String phrase)           
-    {   
-        if(phrase.contains("Trainers"))
-        {   
-        }
-    }
+    }    
+
     
     /**
      * Locate a product with the given ID, and return how

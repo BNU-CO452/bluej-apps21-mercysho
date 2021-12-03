@@ -1,0 +1,22 @@
+Module programming = new Module();
+Module programming = new Module("CO452", "Programming Concepts");
+Module programming = new Module("CO452", "Programming Concepts");
+programming.getCode()
+    returned String "CO452"
+programming.getTitle()
+    returned String "Programming Concepts"
+Module programming = new Module("CO452", "Programming Concepts");
+programming.setCredit(30);
+Module programming = new Module("CO452", "Programming Concepts");
+programming.print();
+ Module Code: CO452: Programming Concepts Credit 15
+
+Course computing = new Course("BT1CWD1", "BSc Computing & Web");
+Module programming = new Module("CO452", "Programming Concepts");
+computing.addModule(programming);
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CWD1: BSc Computing & Web
