@@ -4,7 +4,7 @@ import java.util.*;
  * The stock is described by zero or more Products.
  * 
  * @author Mercy Sholola
- * @version 18/11/2021
+ * @version 0.1 25/11/2021
  */
 public class StockManager
 {
@@ -26,15 +26,64 @@ public class StockManager
     /**
      * Adds a product to the arraylist.
      */
-    public void addProduct(Product product)
+    public void addProduct(int id, String name)
     {
-        stock.add(product);
+        Product product = new Product(id, name);
+        boolean check = checkID(product.getID());
+        if(check == true)
+        {
+            System.out.println();
+            System.out.println(" ID Conflict");
+            System.out.println();
+        }
+        else
+        {
+            if(name == null || name.isEmpty())
+            {
+                System.out.println();
+                System.out.println(" Empty Name");
+                System.out.println();
+            }
+            else if(name.toLowerCase().equals("new product"))
+            {
+                System.out.println();
+                System.out.println(" Invalid Name");
+                System.out.println();
+            }
+            else
+            {
+                stock.add(product);
+                System.out.println();
+                System.out.println(" Added Successfully");
+                System.out.println();
+            }
+        }
+    }
+    
+    private boolean checkID(int id)
+    {
+        boolean check = false;
+        for(Product product : stock) 
+        { 
+            if(product.getID() == id)
+            { 
+                check = true;
+            }
+        }
+        if(check == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     
     /**
      * Locate a product with the given ID, and return how
-     * Many of these items are currently in stock. 
-     * If the product ID does not match any product, return zero.
+     * many of this item are in stock. If the ID does not
+     * match any product, return zero.
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
@@ -52,11 +101,10 @@ public class StockManager
     }
     
     /**
-     * Print the product's specifications. If found,
-     * Its title and stock amount will be displayed..
+     * Print details of the given product. If found,
+     * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
-     * An error system based on if 
-     * and else statements is added to aid user troubleshooting.
+     * Includes an error system using if and else statements for easy user troubleshooting
      */
     public void printProduct(int id)
     {
@@ -76,7 +124,7 @@ public class StockManager
         }
         else
         {
-            System.out.println("Invalid ID");
+            System.out.println(" Invalid ID");
         }
     }
     
@@ -87,7 +135,7 @@ public class StockManager
     public void printAllProducts()
     {
         System.out.println("======================================");
-        System.out.println("         Mercy's Stock List         ");
+        System.out.println("              Stock List              ");
         System.out.println("======================================");
         System.out.println();
         
@@ -107,30 +155,38 @@ public class StockManager
      */
     public void deliverProduct(int id, int quantity)   
     {
-        boolean resultSearch = false;
         String productName = null;
         int oldQuantity = 0;
         int newQuantity = 0;
+        int statusCode = 0;
         for(Product product : stock) 
         { 
-            if(product.getID() == id)
+            if(product.getID() == id && quantity > 0)
             { 
-                resultSearch = true;
+                statusCode = 2;
                 oldQuantity = product.getQuantity();
                 quantity = product.getQuantity() + quantity;
                 productName = product.getName();
                 product.replaceQuantity(quantity);
                 newQuantity = product.getQuantity();
             }
+            else if(quantity <= 0)
+            {
+                statusCode = 1;
+            }
         }
-        if(resultSearch  == true)
+        if(statusCode == 2)
         {
             System.out.println("======================================");
-            System.out.println("Delivered: " + productName);
+            System.out.println(" Delivered: " + productName);
             System.out.println("======================================");
             System.out.println("Quantity Delivered : " + quantity);
             System.out.println("Stock level        : " + oldQuantity + " --> " + newQuantity);
             System.out.println("======================================");
+        }
+        else if(statusCode == 1)
+        {
+            System.out.println(" Invalid Inputted Quantity");
         }
         else
         {
@@ -145,51 +201,55 @@ public class StockManager
      */
     public void sellProduct(int id, int sellQuantity)
     {
-        boolean resultSearch = false;
-        boolean error = false;
         String productName = null;
         int oldQuantity = 0;
         int newQuantity = 0;
+        int statusCode = 0;
         for(Product product : stock) 
         {
             if(product.getID() == id)
             {
                 int quantity = product.getQuantity();
-                if(quantity >= sellQuantity) 
+                if(quantity >= sellQuantity && sellQuantity > 0) 
                 {
-                    resultSearch = true;
+                    statusCode = 3;
                     oldQuantity = product.getQuantity();
                     quantity = quantity - sellQuantity;
                     product.replaceQuantity(quantity);
                     newQuantity = product.getQuantity();
                     productName = product.getName();
                 }
+                else if(sellQuantity <= 0)
+                {
+                    statusCode = 2;
+                }
                 else
                 {
-                    error = true;
+                    statusCode = 1;
                 }
             }
-            else
-            {
-                error = false;
-            }
         }
-        if(resultSearch  == true)
+        if(statusCode == 3)
         {
             System.out.println("======================================");
-            System.out.println("Sold: " + productName);
+            System.out.println(" Sold: " + productName);
             System.out.println("======================================");
             System.out.println("Quantity Sold : " + sellQuantity);
             System.out.println("Stock level   : " + oldQuantity + " --> " + newQuantity);
             System.out.println("======================================");
         }
-        else if(error = true)
+        else if(statusCode == 2)
         {
-            System.out.println("Quantity inadequate");
+            System.out.println(" Invalid Inputted Quantity");
         }
+        else if(statusCode == 1)
+        {
+            System.out.println(" Not enough stock available for inputted quantity");
+        }
+        
         else
         {
-            System.out.println("Invalid ID");
+            System.out.println(" Invalid ID");
         }
         System.out.println();
     }
@@ -197,8 +257,7 @@ public class StockManager
     /**
      * Renames a product using its ID as an identifier
      * An error is reported if there appears to be no stock.
-     * For easier user troubleshooting, 
-     * an error system based on if and else statements is included.
+     * Includes an error system using if and else statements for easy user troubleshooting
      */
     public void renameProduct(int id, String newName)
     {
@@ -215,11 +274,11 @@ public class StockManager
         }
         if(resultSearch  == true)
         {
-            System.out.println("Replaced '" + oldName + "' with '" + newName + "'");
+            System.out.println(" Replaced '" + oldName + "' with '" + newName + "'");
         }
         else
         {
-            System.out.println("Invalid ID");
+            System.out.println(" Invalid ID");
         }
         System.out.println();
     }
@@ -229,24 +288,47 @@ public class StockManager
      */
     public void removeProduct(int id)
     {
-        stock.removeIf(product -> product.getID() == id);
+        boolean check = false;
+        String removedProduct = null;
+        for(Product product : stock) 
+        { 
+            if(product.getID() == id)
+            {
+                check = true;
+                removedProduct = product.toString();
+            }
+        }
+        
+        if(check == true)
+        {
+            System.out.println(" Removed: " + removedProduct);
+            stock.removeIf(product -> product.getID() == id);
+        }
+        
+        else
+        {
+            System.out.println(" ID Not Found");
+        }
     }
     
     /**
      * Finds a product using syntax similar to arraylist items
-     * For easier user troubleshooting, 
-     * an error system based on if and else statements is included.
+     * Uses try and catch handles to dertmine if string can be converted to int for ID search
+     * Includes an error system using if and else statements for easy user troubleshooting
      */
     public void findProduct(String name)
     {
         boolean resultSearch = false;
+        boolean intError = false;
+        int intName = 0;
         System.out.println("======================================");
-        System.out.println("            Search for products       ");
+        System.out.println("            Product Search            ");
         System.out.println("======================================");
         System.out.println();
+        System.out.println("  Name Search Results:");
         for(Product product : stock) 
         { 
-            if(product.getName().contains(name))
+            if(product.getName().toLowerCase().contains(name.toLowerCase()))
             {
                 resultSearch = true;
                 System.out.println(product.toString());
@@ -254,7 +336,31 @@ public class StockManager
         }
         if(resultSearch == false)
         {
-            System.out.println("Sorry, no products have been found");
+            System.out.println(" No Products found\n");
+        }
+        try {
+            intName = Integer.parseInt(name);
+        }
+        catch (NumberFormatException e)
+        {
+            intError = true;
+        }
+        resultSearch = false;
+        if(intError == false)
+        {
+            System.out.println("  ID Search Results:");
+            for(Product product : stock) 
+            { 
+                if(product.getID() == intName)
+                {
+                    resultSearch = true;
+                    System.out.println(product.toString());
+                }
+            }
+            if(resultSearch == false)
+            {
+                System.out.println(" No Products found\n");
+            }
         }
         System.out.println();
         System.out.println("======================================");
@@ -265,19 +371,18 @@ public class StockManager
     
     /**
      * Searches product quantity through a loop with if statement to filter low stock
-     * For easier user troubleshooting, 
-     * an error system based on if and else statements is included.
+     * Includes an error system using if and else statements for easy user troubleshooting
      */
-    public void lowStockFinder()
+    public void lowStockFinder(int amountFilter)
     {
         boolean resultSearch = false;
         System.out.println("======================================");
-        System.out.println("           Stock shortages            ");
+        System.out.println("           Low Stock Products         ");
         System.out.println("======================================");
         System.out.println();
         for(Product product : stock) 
         { 
-            if(product.getQuantity() <= 5)
+            if(product.getQuantity() <= amountFilter)
             {
                 resultSearch = true;
                 System.out.println(product.toString());
@@ -285,8 +390,41 @@ public class StockManager
         }
         if(resultSearch == false)
         {
-            System.out.println("No low stock products found");
+            System.out.println(" No Low Stock Products found");
         }
+        System.out.println("======================================");
+        System.out.println(" Products with " + amountFilter + " or less stock");
+        System.out.println("======================================");
+        
+        System.out.println();
+    }
+    
+    /**
+     * Searches product quantity through a loop with if statement to filter low stock and then delivers 5 of each product automatically
+     * Includes an error system using if and else statements for easy user troubleshooting
+     */
+    public void restockProducts(int amountFilter)
+    {
+        boolean resultSearch = false;
+        System.out.println("======================================");
+        System.out.println("           Low Stock Products         ");
+        System.out.println("======================================");
+        System.out.println();
+        for(Product product : stock) 
+        { 
+            if(product.getQuantity() <= amountFilter)
+            {
+                resultSearch = true;
+                int id = product.getID();
+                deliverProduct(id, 5);
+            }
+        }
+        if(resultSearch == false)
+        {
+            System.out.println(" No Low Stock Products found");
+        }
+        System.out.println("======================================");
+        System.out.println(" Restocked products with " + amountFilter + " or less stock");
         System.out.println("======================================");
         System.out.println();
     }

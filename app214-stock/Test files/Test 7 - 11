@@ -1,0 +1,128 @@
+ sell
+|£| Enter ID:
+
+> 1
+|£| Enter Sell Quantity:
+
+> 4
+ Not enough stock available for inputted quantity
+
+==============================================
+          Stock Management Application        
+            App05: by Richard Ochei           
+==============================================
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit the program
+==============================================
+> search
+|?| Search for:
+
+> 1
+======================================
+            Product Search            
+======================================
+
+  Name Search Results:
+ No Products found
+
+  ID Search Results:
+1: xbox# stock level: 0
+
+======================================
+You searched: '1'
+======================================
+
+==============================================
+          Stock Management Application        
+            App05: by Richard Ochei           
+==============================================
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit the program
+==============================================
+> low stock
+ Invalid choice
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit the program
+==============================================
+> lowstock
+ Invalid choice
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit the program
+==============================================
+> restock
+|?| Max Quantity Restock Filter:
+
+> 1
+======================================
+           Low Stock Products         
+======================================
+
+======================================
+ Delivered: xbox#
+======================================
+Quantity Delivered : 5
+Stock level        : 0 --> 5
+======================================
+
+======================================
+ Restocked products with 1 or less stock
+======================================
+
+==============================================
+          Stock Management Application        
+            App05: by Richard Ochei           
+==============================================
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit the program
+==============================================
+> 

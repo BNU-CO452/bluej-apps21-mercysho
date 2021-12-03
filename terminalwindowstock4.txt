@@ -1,0 +1,32 @@
+********************************
+  App21-04: Stock Application 
+      by Student Name
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > ********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
