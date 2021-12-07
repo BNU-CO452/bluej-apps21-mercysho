@@ -93,7 +93,7 @@ public class Product
         else 
         {
             System.out.println(
-                "Attempt to buy an out of stock item: " + name);
+                "item out of stock: " + name);
         }
     }
     
@@ -110,7 +110,7 @@ public class Product
         else 
         {
             System.out.println(
-                "Attempt to sell an out of stock item: " + name);
+                "item out of stock: " + name);
         }
     }
     

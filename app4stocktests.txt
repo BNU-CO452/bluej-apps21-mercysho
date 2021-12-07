@@ -1,0 +1,199 @@
+ ********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> print
+======================================
+              Stock List              
+======================================
+
+======================================
+
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> add
+|?| Add new Product:
+
+|?| Enter ID
+
+> 101
+|?| Enter Name
+
+> Nike AF 1's
+
+ Added Successfully
+
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> add
+|?| Add new Product:
+
+|?| Enter ID
+
+> 102
+|?| Enter Name
+
+> Adidas Flux
+
+ Added Successfully
+
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> quit
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> add
+|?| Add new Product:
+
+|?| Enter ID
+
+> 103
+|?| Enter Name
+
+> Air Jordan 4's
+
+ Added Successfully
+
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> remove
+|?| Enter ID:
+
+> 102
+ ID Not Found
+********************************
+  App21-04: Stock Application 
+      by Mercy Sholola
+********************************
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> buy
+ Invalid choice
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> Reebok Classics
+ Invalid choice
+Enter the first word of the choice to run: 
+
+   Add a new product
+   Remove a product
+   Rename a product
+   Print all products
+   Deliver a product
+   Sell a product
+   Search for a product
+   Find low-stock products
+   Restock low-stock products
+   Quit program
+==============================================
+> 
